@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://bvnh7iouamt8c"]
+
+[ext_resource type="Texture2D" uid="uid://bkofxla0g670y" path="res://Assets/WU game jam.png" id="1_m5628"]
+[ext_resource type="Script" uid="uid://b5y4s4okh7oxg" path="res://Scripts/button_manager.gd" id="2_k52d1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5628"]
+atlas = ExtResource("1_m5628")
+region = Rect2(356, 432, 127, 64)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k52d1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k52d1"]
+atlas = ExtResource("1_m5628")
+region = Rect2(6, 468, 130, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdiyk"]
+atlas = ExtResource("1_m5628")
+region = Rect2(288, 96, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfgkh"]
+atlas = ExtResource("1_m5628")
+region = Rect2(288, 128, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktc4i"]
+atlas = ExtResource("1_m5628")
+region = Rect2(432, 48, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uib17"]
+atlas = ExtResource("1_m5628")
+region = Rect2(432, 112, 50, 26)
+
+[node name="GameOver" type="Node2D" unique_id=1138213204]
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=263631340]
+position = Vector2(567, 326.50003)
+scale = Vector2(9.420983, 10.234376)
+texture = SubResource("AtlasTexture_m5628")
+
+[node name="BlackPanel" type="Sprite2D" parent="." unique_id=138809785]
+modulate = Color(0, 0, 0, 0.78431374)
+position = Vector2(563.5, 326)
+scale = Vector2(1203, 670)
+texture = SubResource("CanvasTexture_k52d1")
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=714875563]
+position = Vector2(423.00003, 132)
+scale = Vector2(5.78125, 5.78125)
+texture = SubResource("AtlasTexture_k52d1")
+
+[node name="ButtonManager" type="Control" parent="." unique_id=1587309613]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_k52d1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MenuButton" type="TextureButton" parent="ButtonManager" unique_id=1160851299]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 41.0
+offset_top = 287.0
+offset_right = 201.0
+offset_bottom = 359.0
+texture_normal = SubResource("AtlasTexture_rdiyk")
+texture_hover = SubResource("AtlasTexture_bfgkh")
+stretch_mode = 0
+
+[node name="QuitButton" type="TextureButton" parent="ButtonManager" unique_id=1784851228]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 41.0
+offset_top = 391.0
+offset_right = 201.0
+offset_bottom = 463.0
+texture_normal = SubResource("AtlasTexture_ktc4i")
+texture_hover = SubResource("AtlasTexture_uib17")
+stretch_mode = 0
+
+[connection signal="pressed" from="ButtonManager/MenuButton" to="ButtonManager" method="_on_menu_button_pressed"]
+[connection signal="pressed" from="ButtonManager/QuitButton" to="ButtonManager" method="_on_quit_button_pressed"]

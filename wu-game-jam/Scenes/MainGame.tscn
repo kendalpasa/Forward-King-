@@ -1,0 +1,514 @@
+[gd_scene format=3 uid="uid://bxsr673v40ibl"]
+
+[ext_resource type="Texture2D" uid="uid://bkofxla0g670y" path="res://Assets/WU game jam.png" id="1_8etcy"]
+[ext_resource type="Script" uid="uid://4au0qh4dl2r7" path="res://Scripts/GameManager.gd" id="1_321ql"]
+[ext_resource type="PackedScene" uid="uid://bq6fg4j8l0i10" path="res://Assets/king's_path.tscn" id="2_yprpe"]
+[ext_resource type="FontFile" uid="uid://bqgmryck5cfq6" path="res://Fonts/Minecraft.ttf" id="4_ybmw1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1u0y"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(311, 16, 78, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yf5fn"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(144, 32, 96, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4v7s"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(254, 14, 164, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0u6y"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(19, 36, 12, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcnqv"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(14, 206, 52, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48eim"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(14, 206, 52, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yprpe"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(19, 17, 10, 15)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yr2pg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k6vqf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ktwve"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8etcy"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(49, 3, 29, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57qmd"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(81, 3, 29, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yr2pg"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(44, 114, 31, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylpyt"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(86, 114, 31, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyocf"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(43, 76, 33, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktwve"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(85, 76, 33, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gngh"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(432, 176, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybmw1"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(432, 224, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_321ql"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(347, 176, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4f28"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(347, 224, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kvfik"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(262, 176, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3bmkb"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(262, 224, 69, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7numd"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(79, 223, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iuea6"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(142, 222, 52, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73a8k"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(79, 174, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8sds"]
+atlas = ExtResource("1_8etcy")
+region = Rect2(127, 173, 39, 39)
+
+[node name="MainGame" type="Node2D" unique_id=229518245]
+script = ExtResource("1_321ql")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2075308212]
+position = Vector2(639, 334.00003)
+scale = Vector2(24.969477, 36.020836)
+texture = SubResource("AtlasTexture_p1u0y")
+
+[node name="Desk" type="Sprite2D" parent="." unique_id=2091528898]
+position = Vector2(577, 331)
+scale = Vector2(11.936197, 12.839843)
+texture = SubResource("AtlasTexture_yf5fn")
+
+[node name="Koridor" type="Sprite2D" parent="." unique_id=933141853]
+position = Vector2(576, 244)
+scale = Vector2(4.6911764, 4.6911764)
+texture = SubResource("AtlasTexture_g4v7s")
+
+[node name="Throne" type="Sprite2D" parent="." unique_id=725200647]
+position = Vector2(910, 232)
+scale = Vector2(4.562499, 4.562499)
+texture = SubResource("AtlasTexture_d0u6y")
+
+[node name="ShopMenuJester" type="Sprite2D" parent="." unique_id=1203947003]
+unique_name_in_owner = true
+visible = false
+position = Vector2(1056, 261)
+scale = Vector2(3.528845, 3.5288444)
+texture = SubResource("AtlasTexture_fcnqv")
+
+[node name="ShopMenuPress" type="Sprite2D" parent="." unique_id=1250857540]
+unique_name_in_owner = true
+visible = false
+position = Vector2(96, 261)
+scale = Vector2(3.528845, 3.5288444)
+texture = SubResource("AtlasTexture_48eim")
+
+[node name="Control" type="Control" parent="." unique_id=1749539740]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 241.0
+offset_top = 240.0
+offset_right = 281.0
+offset_bottom = 280.0
+
+[node name="Enemie\'s Path" type="HSlider" parent="Control" unique_id=1492307185]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -9.999985
+offset_top = -60.0
+offset_right = 181.1374
+offset_bottom = -26.0
+scale = Vector2(3.385, 3.385)
+theme_override_icons/grabber = SubResource("AtlasTexture_yprpe")
+theme_override_icons/grabber_highlight = SubResource("AtlasTexture_yprpe")
+theme_override_icons/grabber_disabled = SubResource("AtlasTexture_yprpe")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_yr2pg")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_k6vqf")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_ktwve")
+min_value = -10.0
+max_value = 10000.0
+value = -10.0
+editable = false
+scrollable = false
+
+[node name="King\'s Path" parent="Control" unique_id=528559195 node_paths=PackedStringArray("game_manager") instance=ExtResource("2_yprpe")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.5000001
+anchor_right = 15.925001
+anchor_bottom = 1.3770001
+offset_top = 3.8146973e-06
+offset_right = -455.8627
+offset_bottom = -81.08
+game_manager = NodePath("../..")
+
+[node name="Button" type="TextureButton" parent="Control" unique_id=595982626]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 250.0
+offset_top = 200.0
+offset_right = 427.0
+offset_bottom = 361.0
+texture_normal = SubResource("AtlasTexture_8etcy")
+texture_pressed = SubResource("AtlasTexture_57qmd")
+stretch_mode = 0
+
+[node name="Button_lvl2" type="TextureButton" parent="Control" unique_id=2091616194]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 250.0
+offset_top = 200.0
+offset_right = 427.0
+offset_bottom = 361.0
+texture_normal = SubResource("AtlasTexture_yr2pg")
+texture_pressed = SubResource("AtlasTexture_ylpyt")
+stretch_mode = 0
+
+[node name="Button_lvl3" type="TextureButton" parent="Control" unique_id=1264961264]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 250.0
+offset_top = 200.0
+offset_right = 427.0
+offset_bottom = 361.0
+texture_normal = SubResource("AtlasTexture_wyocf")
+texture_pressed = SubResource("AtlasTexture_ktwve")
+stretch_mode = 0
+
+[node name="StepsLeft" type="Label" parent="Control" unique_id=1559567998]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 278.0
+offset_top = -205.0
+offset_right = 360.0
+offset_bottom = -182.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JesterButton_lvl1" type="TextureButton" parent="Control" unique_id=740783553]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 480.0
+offset_top = 230.0
+offset_right = 662.0833
+offset_bottom = 325.0
+texture_normal = SubResource("AtlasTexture_3gngh")
+texture_pressed = SubResource("AtlasTexture_ybmw1")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/JesterButton_lvl1" unique_id=161473913]
+custom_maximum_size = Vector2(33.335, 13.23)
+layout_mode = 0
+offset_left = 140.0
+offset_top = 73.0
+offset_right = 172.0
+offset_bottom = 85.0
+rotation = -0.7853982
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "BUY"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCostLabel_lvl1" type="Label" parent="Control/JesterButton_lvl1" unique_id=391414416]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 106.0
+offset_top = 9.0
+offset_right = 181.18304
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "-50 step"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCountLabel_lvl1" type="Label" parent="Control/JesterButton_lvl1" unique_id=1097645557]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 74.0
+offset_right = 107.18
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterButton_lvl2" type="TextureButton" parent="Control" unique_id=971295859]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 480.0
+offset_top = 230.0
+offset_right = 662.08325
+offset_bottom = 325.0
+texture_normal = SubResource("AtlasTexture_321ql")
+texture_pressed = SubResource("AtlasTexture_d4f28")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/JesterButton_lvl2" unique_id=478090562]
+custom_maximum_size = Vector2(33.335, 13.23)
+layout_mode = 0
+offset_left = 140.0
+offset_top = 73.0
+offset_right = 172.0
+offset_bottom = 85.0
+rotation = -0.7853982
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "BUY"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCostLabel_lvl2" type="Label" parent="Control/JesterButton_lvl2" unique_id=229901833]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 106.0
+offset_top = 9.0
+offset_right = 181.18304
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "-50 step"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCountLabel_lvl2" type="Label" parent="Control/JesterButton_lvl2" unique_id=724170339]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 74.0
+offset_right = 107.18
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterButton_lvl3" type="TextureButton" parent="Control" unique_id=2009634691]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 480.0
+offset_top = 230.0
+offset_right = 662.08325
+offset_bottom = 325.0
+texture_normal = SubResource("AtlasTexture_kvfik")
+texture_pressed = SubResource("AtlasTexture_3bmkb")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/JesterButton_lvl3" unique_id=1279271010]
+custom_maximum_size = Vector2(33.335, 13.23)
+layout_mode = 0
+offset_left = 140.0
+offset_top = 73.0
+offset_right = 172.0
+offset_bottom = 85.0
+rotation = -0.7853982
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "BUY"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCostLabel_lvl3" type="Label" parent="Control/JesterButton_lvl3" unique_id=420786124]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 106.0
+offset_top = 9.0
+offset_right = 181.18304
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "-50 step"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JesterCountLabel_lvl3" type="Label" parent="Control/JesterButton_lvl3" unique_id=1424535335]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(72.18, 29.9)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 74.0
+offset_right = 107.18
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Jester_lvl1_UpgradeButton" type="TextureButton" parent="Control" unique_id=1628161506]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 760.0
+offset_top = -126.0
+offset_right = 865.0
+offset_bottom = -21.0
+texture_normal = SubResource("AtlasTexture_7numd")
+stretch_mode = 0
+
+[node name="Jester_lvl2_UpgradeButton" type="TextureButton" parent="Control" unique_id=1662186431]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 760.0
+offset_top = 47.0
+offset_right = 865.0
+offset_bottom = 152.0
+texture_normal = SubResource("AtlasTexture_iuea6")
+stretch_mode = 0
+
+[node name="Press_lvl1_UpgradeButton" type="TextureButton" parent="Control" unique_id=275427196]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -198.0
+offset_top = -126.0
+offset_right = -93.0
+offset_bottom = -21.0
+texture_normal = SubResource("AtlasTexture_73a8k")
+stretch_mode = 0
+
+[node name="Press_lvl2_UpgradeButton" type="TextureButton" parent="Control" unique_id=414201404]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -198.0
+offset_top = 47.0
+offset_right = -93.0
+offset_bottom = 152.0
+texture_normal = SubResource("AtlasTexture_q8sds")
+stretch_mode = 0
+
+[node name="Control2" type="Control" parent="." unique_id=929747981]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 241.0
+offset_top = 240.0
+offset_right = 281.0
+offset_bottom = 280.0
+
+[node name="Press_lvl2_Label" type="Label" parent="Control2" unique_id=1024566860]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -205.0
+offset_top = -16.0
+offset_right = -85.0
+offset_bottom = 7.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+text = "Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Press_lvl3_Label" type="Label" parent="Control2" unique_id=1737297637]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = -205.0
+offset_top = 157.0
+offset_right = -85.0
+offset_bottom = 180.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+text = "Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jester_lvl2_Label" type="Label" parent="Control2" unique_id=856958851]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 754.0
+offset_top = -16.0
+offset_right = 874.0
+offset_bottom = 7.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+text = "Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jester_lvl3_Label" type="Label" parent="Control2" unique_id=268849471]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 754.0
+offset_top = 156.0
+offset_right = 874.0
+offset_bottom = 179.0
+theme_override_fonts/font = ExtResource("4_ybmw1")
+text = "Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Button_lvl2" to="." method="_on_button_lvl_2_pressed"]
+[connection signal="pressed" from="Control/Button_lvl3" to="." method="_on_button_lvl_3_pressed"]
+[connection signal="pressed" from="Control/JesterButton_lvl1" to="." method="_on_jester_button_lvl_1_pressed"]
+[connection signal="pressed" from="Control/JesterButton_lvl2" to="." method="_on_jester_button_lvl_2_pressed"]
+[connection signal="pressed" from="Control/JesterButton_lvl3" to="." method="_on_jester_button_lvl_3_pressed"]
+[connection signal="pressed" from="Control/Jester_lvl1_UpgradeButton" to="." method="_on_jester_lvl_1_upgrade_button_pressed"]
+[connection signal="pressed" from="Control/Jester_lvl2_UpgradeButton" to="." method="_on_jester_lvl_2_upgrade_button_pressed"]
+[connection signal="pressed" from="Control/Press_lvl1_UpgradeButton" to="." method="_on_press_lvl_1_upgrade_button_pressed"]
+[connection signal="pressed" from="Control/Press_lvl2_UpgradeButton" to="." method="_on_press_lvl_2_upgrade_button_pressed"]

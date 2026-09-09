@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://86m1ghtbwf2k"]
+
+[ext_resource type="Texture2D" uid="uid://bkofxla0g670y" path="res://Assets/WU game jam.png" id="1_eaxi1"]
+[ext_resource type="Script" uid="uid://r2kqr5jkteod" path="res://Scripts/TutorialStoryScene.gd" id="2_boj24"]
+[ext_resource type="FontFile" uid="uid://bqgmryck5cfq6" path="res://Fonts/Minecraft.ttf" id="2_qt8dx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boj24"]
+atlas = ExtResource("1_eaxi1")
+region = Rect2(356, 432, 127, 64)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_yf5fn"]
+
+[sub_resource type="FontVariation" id="FontVariation_yf5fn"]
+base_font = ExtResource("2_qt8dx")
+spacing_glyph = 2
+
+[node name="TutorialStory" type="Node2D" unique_id=1291438227]
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=175507186]
+position = Vector2(567, 326.50003)
+scale = Vector2(9.420983, 10.234376)
+texture = SubResource("AtlasTexture_boj24")
+
+[node name="BlackPanel" type="Sprite2D" parent="." unique_id=1743934094]
+modulate = Color(0, 0, 0, 0.78431374)
+position = Vector2(563.5, 326)
+scale = Vector2(1203, 670)
+texture = SubResource("CanvasTexture_yf5fn")
+
+[node name="Control" type="Control" parent="." unique_id=1307158197]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_boj24")
+
+[node name="Label" type="Label" parent="Control" unique_id=1542643964]
+custom_minimum_size = Vector2(560, 180)
+custom_maximum_size = Vector2(560, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 260.0
+offset_top = 180.0
+offset_right = 820.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 8
+theme_override_fonts/font = SubResource("FontVariation_yf5fn")
+theme_override_font_sizes/font_size = 28
+text = "Help the King get away from the bandits chasing him and reach the throne! Be quick and press the button as fast as you can to move the King forward."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="Control" unique_id=2058511371]
+custom_minimum_size = Vector2(560, 30)
+custom_maximum_size = Vector2(560, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 260.0
+offset_top = 410.0
+offset_right = 820.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.39215687)
+theme_override_constants/line_spacing = 8
+theme_override_fonts/font = SubResource("FontVariation_yf5fn")
+theme_override_font_sizes/font_size = 28
+text = "Press Space to Start"
+horizontal_alignment = 1
+autowrap_mode = 2

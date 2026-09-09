@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://bq6fg4j8l0i10"]
+
+[ext_resource type="Texture2D" uid="uid://bkofxla0g670y" path="res://Assets/WU game jam.png" id="1_dmdll"]
+[ext_resource type="Script" uid="uid://cqdsmvtevir6n" path="res://Scripts/king's_path.gd" id="2_blnxb"]
+[ext_resource type="FontFile" uid="uid://bqgmryck5cfq6" path="res://Fonts/Minecraft.ttf" id="3_blnxb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf4sy"]
+atlas = ExtResource("1_dmdll")
+region = Rect2(19, 0, 12, 16)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yr2pg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k6vqf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ktwve"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4v7s"]
+atlas = ExtResource("1_dmdll")
+region = Rect2(49, 37, 28, 25)
+
+[node name="King\'s Path" type="HSlider" unique_id=294969195]
+offset_left = -10.0
+offset_top = -60.0
+offset_right = 181.13736
+offset_bottom = -26.0
+scale = Vector2(3.385, 3.385)
+theme_override_icons/grabber = SubResource("AtlasTexture_sf4sy")
+theme_override_icons/grabber_highlight = SubResource("AtlasTexture_sf4sy")
+theme_override_icons/grabber_disabled = SubResource("AtlasTexture_sf4sy")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_yr2pg")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_k6vqf")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_ktwve")
+max_value = 10000.0
+editable = false
+scrollable = false
+script = ExtResource("2_blnxb")
+
+[node name="TextBubble" type="Sprite2D" parent="." unique_id=534807240]
+visible = false
+position = Vector2(42.54062, -16.838997)
+scale = Vector2(2.0125554, 2.0125551)
+texture = SubResource("AtlasTexture_g4v7s")
+
+[node name="Control" type="Control" parent="." unique_id=990582991]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label1" type="Label" parent="Control" unique_id=95143216]
+unique_name_in_owner = true
+visible = false
+custom_maximum_size = Vector2(250, 165)
+layout_mode = 0
+offset_left = 29.837519
+offset_top = -33.97341
+offset_right = 279.83752
+offset_bottom = 68.02659
+scale = Vector2(0.15, 0.15)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_blnxb")
+theme_override_font_sizes/font_size = 32
+text = "Be faster, he might be coming!!!"
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="Control" unique_id=2035432558]
+unique_name_in_owner = true
+visible = false
+custom_maximum_size = Vector2(250, 165)
+layout_mode = 0
+offset_left = 28.951254
+offset_top = -33.67799
+offset_right = 278.95126
+offset_bottom = 103.32201
+scale = Vector2(0.15, 0.15)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_blnxb")
+theme_override_font_sizes/font_size = 32
+text = "You really look like you need some help. I will send you some."
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="Control" unique_id=519403072]
+unique_name_in_owner = true
+visible = false
+custom_maximum_size = Vector2(250, 165)
+layout_mode = 0
+offset_left = 28.951256
+offset_top = -32.79173
+offset_right = 278.95126
+offset_bottom = 69.20827
+scale = Vector2(0.15, 0.15)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_blnxb")
+theme_override_font_sizes/font_size = 32
+text = "My Jesters will help you press the button."
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="Control" unique_id=1247913128]
+unique_name_in_owner = true
+visible = false
+custom_maximum_size = Vector2(250, 165)
+layout_mode = 0
+offset_left = 28.951256
+offset_top = -33.973415
+offset_right = 278.95126
+offset_bottom = 103.02658
+scale = Vector2(0.15, 0.15)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_blnxb")
+theme_override_font_sizes/font_size = 32
+text = "You can call as many Jesters as you want."
+autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="Control" unique_id=1447676046]
+unique_name_in_owner = true
+visible = false
+custom_maximum_size = Vector2(250, 165)
+layout_mode = 0
+offset_left = 28.951256
+offset_top = -33.973415
+offset_right = 278.95126
+offset_bottom = 103.02658
+scale = Vector2(0.15, 0.15)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_blnxb")
+theme_override_font_sizes/font_size = 32
+text = "Oh no! He's here! Don't let him catch me!"
+autowrap_mode = 2

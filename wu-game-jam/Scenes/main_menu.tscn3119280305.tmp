@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://d186xlgfg71e6"]
+
+[ext_resource type="Texture2D" uid="uid://bkofxla0g670y" path="res://Assets/WU game jam.png" id="1_28flt"]
+[ext_resource type="Script" uid="uid://b5y4s4okh7oxg" path="res://button_manager.gd" id="2_48xlc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0u6y"]
+atlas = ExtResource("1_28flt")
+region = Rect2(356, 432, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57qmd"]
+atlas = ExtResource("1_28flt")
+region = Rect2(432, 48, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ehe0"]
+atlas = ExtResource("1_28flt")
+region = Rect2(432, 112, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4v7s"]
+atlas = ExtResource("1_28flt")
+region = Rect2(432, 16, 50, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yf5fn"]
+atlas = ExtResource("1_28flt")
+region = Rect2(432, 80, 50, 26)
+
+[node name="MainMenu" type="Node2D" unique_id=1013287420]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1847726877]
+position = Vector2(567, 323.3125)
+scale = Vector2(9.420983, 10.134766)
+texture = SubResource("AtlasTexture_d0u6y")
+
+[node name="ButtonManager" type="Control" parent="." unique_id=407752304]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_48xlc")
+
+[node name="QuitButton" type="TextureButton" parent="ButtonManager" unique_id=2033814108]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 41.0
+offset_top = 330.0
+offset_right = 201.0
+offset_bottom = 402.0
+texture_normal = SubResource("AtlasTexture_57qmd")
+texture_pressed = SubResource("AtlasTexture_1ehe0")
+stretch_mode = 0
+
+[node name="StartButton" type="TextureButton" parent="ButtonManager" unique_id=1582466110]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 41.0
+offset_top = 226.0
+offset_right = 201.0
+offset_bottom = 298.0
+texture_normal = SubResource("AtlasTexture_g4v7s")
+texture_hover = SubResource("AtlasTexture_yf5fn")
+stretch_mode = 0
+
+[connection signal="pressed" from="ButtonManager/QuitButton" to="ButtonManager" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="ButtonManager/StartButton" to="ButtonManager" method="_on_start_button_pressed"]
